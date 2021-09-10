@@ -114,7 +114,6 @@ a {
 }
 
 /* ---------- Main styles ---------- */
-
 /* ------ Header styles ------ */
 .header {
     display: flex;
@@ -139,4 +138,72 @@ a {
     font-size: 2rem;
     margin-right: 2rem;
     color: var(--titles-footer-background);
+    cursor: pointer;
+}
+
+/* ------ Hero section styles ------ */
+.hero {
+    width: 100vw;
+    height: 100vh; 
+    background-image: linear-gradient(to right, #1c1c1c00, #1c1c1cc5, #1C1C1C), url("./assets/background_image.jpeg");
+    background-size: cover;
+}
+.hero-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.cole-skateboard {
+    margin-top: 5rem;
+    width: 10%;
+}
+.cole-skateboard img{
+    width: 100%;
+    height: auto;
+}
+.cole-skate {
+    width: 8%;
+    margin-top: 2rem;
+}
+.cole-skate img {
+    width: 100%;
+    height: auto;
+}
+.hero-title {
+    color: var(--titles-footer-background);
+    font-family: var(--poppins-font);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+.hero-subtitle{
+    font-family: var(--open-sans-font);
+    width: 27%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.button {
+    position: relative;
+    border: 1px solid var(--titles-footer-background);
+    font-family: var(--open-sans-font);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--titles-footer-background);
+    top: 0.3rem;
+    left: 0.3rem;
+}
+.button, button::after{
+    cursor: pointer;
 }
