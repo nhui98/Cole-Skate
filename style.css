@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@700&display=swap');
 
 :root {
     /* Font */
@@ -25,16 +25,18 @@ html {
 body {
     color: var(--highlight-text);
 }
+a {
+    text-decoration: none;
+}
 
 /* ---------- Menu styles ---------- */
-
 #header {
     min-width: 35rem;
     position: fixed;
     top: 0;
     right: 0;
 }
-.nav {
+.nav-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@ body {
     display: flex;
     height: 10%;
 }
-.nav-logo {
+.nav-header div {
     width: 50%;
 }
 .nav-logo img {
@@ -54,11 +56,13 @@ body {
     margin: 2rem 0 0 3rem;
 }
 .nav-close {
-    width: 50%;
     font-size: 3rem;
     display: flex;
     justify-content: flex-end;
     margin: 1rem 3rem 0 0;
+}
+.nav-close span{
+    cursor: pointer;
 }
 
 /* Nav Menu */
@@ -78,7 +82,6 @@ body {
     margin: 0.5rem;
 }
 .nav-link {
-    text-decoration: none;
     text-transform: uppercase;
     font-family: var(--poppins-font);
     font-size: 3.1rem;
@@ -90,3 +93,21 @@ body {
 }
 
 /* Nav Footer */
+.nav-footer {
+    color: var(--titles-footer-background);
+}
+.contact-info {
+    display: flex;
+    margin-left: 3rem;
+}
+.contact-info a {
+    color: var(--titles-footer-background);
+    text-decoration: underline;
+}
+.contact-item {
+    margin: 0 .5rem;
+    font-size: 1.1rem;
+    font-family: var(--open-sans-font);
+    font-weight: 600;
+    text-transform: uppercase;
+}
