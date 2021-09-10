@@ -30,11 +30,12 @@ a {
 }
 
 /* ---------- Menu styles ---------- */
-#header {
+#nav {
     min-width: 35rem;
     position: fixed;
     top: 0;
     right: 0;
+    display: none;
 }
 .nav-container {
     height: 100vh;
@@ -110,4 +111,32 @@ a {
     font-family: var(--open-sans-font);
     font-weight: 600;
     text-transform: uppercase;
+}
+
+/* ---------- Main styles ---------- */
+
+/* ------ Header styles ------ */
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+}
+.header div {
+    width: 50%;
+}
+.header-logo img {
+    width: 3rem;
+    height: auto;
+    margin: 1.6rem 0 0 2rem;
+}
+.hamburger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hamburger i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--titles-footer-background);
 }
