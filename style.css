@@ -123,6 +123,7 @@ a {
     position: fixed;
     width: 100%;
     height: 4rem;
+    z-index: 50;
 }
 .header div {
     width: 50%;
@@ -146,9 +147,10 @@ a {
 
 /* ------ Hero section styles ------ */
 .hero {
+    position: relative;
     width: 100vw;
-    height: 100vh; 
-    background-image: linear-gradient(to right, #1c1c1c00, #1c1c1cc5, #1C1C1C), url("./assets/background_image.jpeg");
+    height: 140vh; 
+    background-image: linear-gradient(to right, rgba(28, 28, 28, 0.7), rgba(28, 28, 28, 0.9), rgb(28, 28, 28)), url("./assets/background_image.jpeg");
     background-size: cover;
 }
 .hero-container{
@@ -211,12 +213,32 @@ a {
     cursor: pointer;
 }
 
+/* Curve */
+.curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(187% + 1.3px);
+    height: 279px;
+}
+.curve .shape-fill {
+    fill: var(--main-background);
+}
+
 /* ------ Product section styles ------ */
 .product {
     width: 100vw;
     height: 100%; 
     background-color: var(--main-background);
     color: var(--titles-footer-background);
+    z-index: 0;
 }
 .product-container {
     height: 100%;
