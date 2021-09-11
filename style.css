@@ -24,10 +24,12 @@ html {
 }
 body {
     color: var(--highlight-text);
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
 }
+
 
 /* ---------- Menu styles ---------- */
 #nav {
@@ -35,6 +37,7 @@ a {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 100;
     display: none;
 }
 .nav-container {
@@ -125,9 +128,9 @@ a {
     width: 50%;
 }
 .header-logo img {
-    width: 3rem;
+    width: 6rem;
     height: auto;
-    margin: 1.6rem 0 0 2rem;
+    margin: 2rem 0 0 2.5rem;
 }
 .hamburger {
     display: flex;
@@ -135,8 +138,8 @@ a {
     align-items: center;
 }
 .hamburger i{
-    font-size: 2rem;
-    margin-right: 2rem;
+    font-size: 3rem;
+    margin: 2rem 2.5rem 0 0;
     color: var(--titles-footer-background);
     cursor: pointer;
 }
@@ -189,11 +192,11 @@ a {
     position: relative;
     border: 1px solid var(--titles-footer-background);
     font-family: var(--open-sans-font);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1rem 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .button::after{
     content: "";
@@ -206,4 +209,64 @@ a {
 }
 .button, button::after{
     cursor: pointer;
+}
+
+/* ------ Product section styles ------ */
+.product {
+    width: 100vw;
+    height: 100%; 
+    background-color: var(--main-background);
+    color: var(--titles-footer-background);
+}
+.product-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-intro{
+    font-size: 1.2rem;
+    color: var(--text-newsletter-background);
+    font-family: var(--open-sans-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+.product-title{
+    font-family: var(--poppins-font);
+    font-size: 2.8rem;
+    margin-top: 1rem;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.product-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+.product-img {
+    max-width: 22rem;
+}
+.product-img img{
+    max-width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px, 
+    rgba(0, 0, 0, 0.1) 0px 10px 10px;
+}
+.product-description {
+    max-width: 22rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: var(--poppins-font);
+    padding: 0.8rem;
+}
+.product-button{
+    margin-bottom: 2rem;
 }
