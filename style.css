@@ -374,7 +374,36 @@ a {
     border-top: 5rem solid transparent;
     border-left: 5rem solid var(--swoosh-background);
     border-bottom: 5rem solid transparent;
-    bottom: -2.96rem;
+    bottom: -2.99rem;
     right: -0.8rem;
     transform: rotate(45deg);
 } 
+
+/* ------ Rating section styles ------ */
+.rating{
+    width: 100vw;
+    height: 70vh;
+}
+.rating-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-newsletter-background);
+    font-family: var(--open-sans-font);
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 100%;
+}
+.rating-heading{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+.rating-image{
+    margin-top: 2rem;
+}
+.rating-from{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
