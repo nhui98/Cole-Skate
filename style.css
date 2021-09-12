@@ -239,6 +239,7 @@ a {
     background-color: var(--main-background);
     color: var(--titles-footer-background);
     z-index: 0;
+    position: relative;
 }
 .product-container {
     height: 100%;
@@ -293,6 +294,36 @@ a {
     margin-bottom: 2rem;
 }
 
+/* Curve */
+.curve2{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+}
+.curve2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 70% 100%;
+    width: 55%;
+    height: 100%;
+    background-color:var(--swoosh-background);
+    transform: translate(-2%, 60%);
+    transform: translate(-2%, 60%);
+}
+.curve2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 70% 100%;
+    width: 55%;
+    height: 100%;
+    background-color:var(--main-background);
+    transform: translate(92%, 40%);
+    z-index: -1;
+}
+
 /* ------ More About section styles ------ */
 .more-about{
     width: 100vw;
@@ -307,6 +338,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    z-index: 1;
 }
 .more-about-item:nth-child(1){
     margin-bottom: 10rem;
@@ -351,6 +383,9 @@ a {
     left: -10rem;
     top: 5rem;
 }
+.follow-us-img{
+    transform: translate(0, 8rem);
+}
 .follow-us-img img{
     width: 100%;
 }
@@ -372,18 +407,48 @@ a {
     width: 0;
     height: 0;
     border-top: 5rem solid transparent;
-    border-left: 5rem solid var(--swoosh-background);
+    border-left: 5rem solid var(--main-background);
     border-bottom: 5rem solid transparent;
     bottom: -2.99rem;
     right: -0.8rem;
     transform: rotate(45deg);
 } 
 
+/* Curve */
+.curve3{
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    top: 0;
+}
+.curve3::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 60% 100%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--main-background);
+    transform: translate(-2%, -42%);
+}
+.curve3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 60% 100%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--swoosh-background);
+    transform: translate(90%, -61%);
+    /* z-index: -1; */
+}
+
 /* ------ Rating section styles ------ */
 .rating{
     width: 100vw;
     height: 70vh;
     background-color: var(--main-background);
+    position: relative;
 }
 .rating-container{
     display: flex;
@@ -409,7 +474,7 @@ a {
     margin-top: 2rem;
 }
 
-/* ------ Rating section styles ------ */
+/* ------ Newsletter section styles ------ */
 .newsletter {
     width: 100%;
     height: 60vh;
