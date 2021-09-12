@@ -235,7 +235,7 @@ a {
 /* ------ Product section styles ------ */
 .product {
     width: 100vw;
-    height: 100%; 
+    height: 140vh; 
     background-color: var(--main-background);
     color: var(--titles-footer-background);
     z-index: 0;
@@ -292,3 +292,89 @@ a {
 .product-button{
     margin-bottom: 2rem;
 }
+
+/* ------ More About section styles ------ */
+.more-about{
+    width: 100vw;
+    height: 100%;
+    background-color: var(--swoosh-background);
+}
+.more-about-container{
+    display: flex;
+    flex-direction: column;
+}
+.more-about-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.more-about-item:nth-child(1){
+    margin-bottom: 10rem;
+}
+.more-about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+.more-about-info h2{
+    font-family: var(--poppins-font);
+    color: var(--titles-footer-background);
+    font-size: 4rem;
+}
+.more-about-info span{
+    color: var(--text-newsletter-background);
+    font-family: var(--open-sans-font);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 2rem;   
+}
+.more-about-info a{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: var(--open-sans-font);
+    color: var(--titles-footer-background);
+    margin-top: 2rem;
+}
+.more-about-img{
+    width: 35rem;
+    height: auto;
+}
+.more-about-img img{
+    width: 100%;
+}
+.img {
+    position: relative;
+}
+.follow-us-info{
+    position: relative;
+    left: -10rem;
+    top: 5rem;
+}
+.follow-us-img img{
+    width: 100%;
+}
+.more-about-img::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5rem solid transparent;
+    border-left: 5rem solid var(--swoosh-background);
+    border-bottom: 5rem solid transparent;
+    bottom: -3rem;
+    right: -0.8rem;
+    transform: rotate(45deg);
+}
+.follow-us-img::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5rem solid transparent;
+    border-left: 5rem solid var(--swoosh-background);
+    border-bottom: 5rem solid transparent;
+    bottom: -2.96rem;
+    right: -0.8rem;
+    transform: rotate(45deg);
+} 
