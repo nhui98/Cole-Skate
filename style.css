@@ -462,3 +462,32 @@ a {
     color: var(--titles-footer-background);
     margin-top: 3rem;
 }
+
+/* ------ Footer section styles ------ */
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--titles-footer-background);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer-container .contact-info{
+    margin-right: 3rem;
+}
+.footer-container .contact-info,
+.footer-container a 
+{
+    color: var(--text-newsletter-background);
+}
+.footer-logo {
+    width: 8rem;
+    margin: 2rem;
+}
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
