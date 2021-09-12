@@ -383,6 +383,7 @@ a {
 .rating{
     width: 100vw;
     height: 70vh;
+    background-color: var(--main-background);
 }
 .rating-container{
     display: flex;
@@ -406,4 +407,58 @@ a {
 .rating-from{
     font-size: 1.2rem;
     margin-top: 2rem;
+}
+
+/* ------ Rating section styles ------ */
+.newsletter {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--text-newsletter-background);
+}
+.newsletter-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.newsletter-logo{
+    width: 28rem;
+    transform: translateY(-10rem);
+    margin-left: 2rem;
+}
+.newsletter-logo img{
+    width: 100%;
+    height: auto;
+}
+.newsletter-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-left: 10rem;
+}
+.newsletter-title{
+    text-transform: uppercase;
+    font-family: var(--open-sans-font);
+    font-weight: bold;
+}
+.newsletter-heading{
+    font-size: 2rem;
+    color: var(--titles-footer-background);
+    text-transform: uppercase;
+    font-family: var(--poppins-font);
+    margin-top: 2rem;
+}
+
+.newsletter-subheading{
+    font-family: var(--open-sans-font);
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+.newsletter-content .button{
+    width: 30%;
+    text-align: center;
+    color: var(--titles-footer-background);
+    margin-top: 3rem;
 }
