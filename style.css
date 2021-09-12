@@ -26,7 +26,6 @@ html {
 }
 body {
     overflow-x: hidden;
-    overflow: hidden;
 }
 body.stop-scrolling{
     height: 100%;
@@ -57,19 +56,19 @@ ul, a{
 /* max-width: min(90%, 70rem); */
 
 /* ---------- Menu styles ---------- */
-#nav {
-    min-width: 35rem;
+.nav {
+    width: 35rem;
     height: 100%;
     display: flex;
     position: fixed;
     top: 0;
     right: 0;
-    transform: translate(35rem, 0);
+    transform: translate(100%, 0);
     transition: transform .5s;
     background-color: var(--text-newsletter-background);
     z-index: 100;
 }
-#nav.open{
+.nav.open{
     transform: translate(0, 0);
 }
 .nav-container {
@@ -112,7 +111,7 @@ ul, a{
 }
 .nav-link {
     font-family: var(--poppins-font);
-    font-size: 3.1rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: var(--highlight-text);
 }
@@ -135,6 +134,20 @@ ul, a{
 }
 .contact-item {
     margin-right: 1.25rem;
+}
+/* Menu Media Queries */
+@media screen and (max-width: 1200px){
+    .nav-link{
+        font-size: 2.8rem;
+    }
+    .link{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .nav{
+        width: 100%;
+    }
 }
 
 /* ---------- Main styles ---------- */
