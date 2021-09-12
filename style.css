@@ -26,6 +26,10 @@ body {
     color: var(--highlight-text);
     overflow-x: hidden;
 }
+.stop-scrolling{
+    height: 100%;
+    overflow: hidden;
+}
 a {
     text-decoration: none;
 }
@@ -38,7 +42,12 @@ a {
     top: 0;
     right: 0;
     z-index: 100;
-    display: none;
+    transform: translate(35rem, 0);
+    transition: transform .5s;
+    /* display: none; */
+}
+#nav.open{
+    transform: translate(0, 0);
 }
 .nav-container {
     height: 100vh;
