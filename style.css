@@ -108,6 +108,45 @@ h3 {
 .button, button::after{
     cursor: pointer;
 }
+/* Base media queries */
+@media screen and (min-width: 768px) {
+    .text-link {
+        font-size: 1.5rem;
+    }
+    .divider {
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: 3.5rem;
+        letter-spacing: 2.5px;
+    }
+    h2{
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    h3 {
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
+    .intro-text{
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+    .button {
+        position: relative;
+        border: 1px solid var(--titles-footer-background);
+        padding: 1rem 2.5rem;
+    }
+    .button span{
+        font-family: var(--open-sans-font);
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+    .button::after{
+        top: 0.25rem;
+        left: 0.25rem;
+    }
+}
 
 /* ---------- Menu styles ---------- */
 .nav {
@@ -182,6 +221,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav-footer .contact-info{
     margin: 2rem 0;
 }
 .contact-info {
@@ -192,6 +233,24 @@ h3 {
 }
 .contact-item {
     margin-right: 0.75rem;
+}
+/* Menu media queries */
+@media screen and (min-width: 768px) {
+    .nav-logo {
+        width: 8rem;
+    }
+    .nav-close span {
+        font-size: 5rem;
+    }
+    .nav-link {
+        font-size: 3.5rem;
+    }
+    .contact-item {
+        margin-right: 2.75rem;
+    }
+    .nav-footer .contact-info{
+        margin: 4rem 0;
+    }
 }
 
 /* ---------- Main styles ---------- */
@@ -226,6 +285,24 @@ h3 {
     color: var(--titles-footer-background);
     cursor: pointer;
 }
+/* Header media queries */
+@media screen and (min-width: 768px) {
+    .header-logo {
+        width: 9rem;
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+    .hamburger {
+        position: absolute;
+        top: 2.25rem;
+        right: 2.25rem;
+    }
+    .hamburger i{
+        font-size: 3.75rem;
+        color: var(--titles-footer-background);
+        cursor: pointer;
+    }
+}
 
 /* ------ Hero section styles ------ */
 .hero {
@@ -238,7 +315,7 @@ h3 {
 }
 .hero-container{
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,6 +341,26 @@ h3 {
 }
 .hero-button{
     margin: 2rem 0;
+}
+/* Hero media queries */
+@media screen and (min-width: 768px) {
+    .cole-skateboard {
+        width: 10rem;
+        margin-top: 3.5rem;
+    }
+    .cole-skate {
+        width: 8.5rem;
+        margin-top: 2.5rem;
+    }
+    .hero-title {
+        margin-top: 2.75rem;
+    }
+    .hero-subtitle{
+        margin-top: 1.75rem;
+    }
+    .hero-button{
+        margin: 3.5rem 0;
+    }
 }
 
 /* ------ Product section styles ------ */
@@ -303,14 +400,14 @@ h3 {
     margin: 3rem 2rem 0;
 }
 .product-img {
-    max-width: 22rem;
+    max-width: 25rem;
 }
 .product-img img{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px, 
     rgba(0, 0, 0, 0.1) 0px 10px 10px;
 }
 .product-description {
-    max-width: 22rem;
+    max-width: 25rem;
     text-align: center;
     margin-top: 1.25rem;
 }
@@ -319,6 +416,16 @@ h3 {
 }
 .product-button span{
     color: var(--titles-footer-background);
+}
+/* Product media queries */
+@media screen and (min-width: 768px) {
+    .product-button{
+        margin: 6rem 0;
+    }
+    .product-container {
+        margin-top: 5rem;
+        margin-bottom: 15rem;
+    }
 }
 
 /* ------ More About section styles ------ */
@@ -349,7 +456,7 @@ h3 {
     margin-top: 2rem;
 }
 .more-about-img{
-    max-width: 20rem;
+    max-width: 30rem;
 } 
 .more-about-info{
     display: flex;
@@ -389,6 +496,29 @@ h3 {
     bottom: -2.98rem;
     right: -0.9rem;
 }
+/* More About media queries */
+@media screen and (min-width: 768px) {
+    .more-about-item:nth-child(1){
+        transform: translate(0, -7.5rem);
+    }
+    .more-about-item:nth-child(2){
+        transform: translate(0, 7.5rem);
+    }
+    .more-about-img{
+        max-width: 35rem;
+    } 
+    .more-about-info{
+        gap: 3.5rem;
+    } 
+    .more-about-img::before{
+        border-top: 4rem solid transparent;
+        border-left: 4rem solid var(--swoosh-background);
+        border-bottom: 4rem solid transparent;
+    }
+    .follow-us-img::before{
+        border-left: 4rem solid var(--main-background);
+    }
+}
 
 /* ------ Rating section styles ------ */
 .rating{
@@ -410,6 +540,13 @@ h3 {
 }
 .rating-image{
     margin: 0 1rem;
+}
+/* Rating media queries */
+@media screen and (min-width: 768px) {
+    .rating-container{
+        min-height: 40rem;
+        gap: 2rem;
+    }
 }
 
 /* ------ Newsletter section styles ------ */
@@ -447,6 +584,28 @@ h3 {
 .newsletter-content .button span{
     color: var(--titles-footer-background);
 }
+/* Newsletter media queries */
+@media screen and (min-width: 768px) {
+    .newsletter-container{
+        gap: 3.5rem;
+    }
+    .newsletter-logo{
+        width: 20rem;
+        transform: translateY(-4.5rem);
+    }
+    .newsletter-content{
+        margin: 3rem 0;
+    }
+    .newsletter-title{
+        color: var(--highlight-text);
+    }
+    .newsletter-button .button{
+        display: inline-block;
+    }
+    .newsletter-content .button{
+        margin: 1.5rem 0;
+    }
+}
 
 /* ------ Footer section styles ------ */
 .footer{
@@ -471,6 +630,16 @@ h3 {
 .footer-logo {
     width: 3.5rem;
 }
+/* Newsletter media queries */
+@media screen and (min-width: 768px) {
+    .footer-container .contact-info{
+        margin: 3rem 0;
+    }
+    .footer-logo {
+        width: 6.5rem;
+    }
+}
+
 
 /* Curve */
 /* .curve {
