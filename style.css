@@ -53,26 +53,20 @@ ul, li, a{
     font-weight: 600;
     font-size: 1.2rem;
 }
-h1{
+h1,h2,h3{
     color: var(--titles-footer-background);
     font-family: var(--poppins-font);
     text-transform: uppercase;
-    font-size: 2rem;
     letter-spacing: 1px;
+}
+h1{
+    font-size: 2rem;
 }
 h2{
-    font-family: var(--poppins-font);
-    color: var(--titles-footer-background);
     font-size: 1.6rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 h3 {
-    font-family: var(--poppins-font);
-    color: var(--titles-footer-background);
     font-size: 1.2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 .intro-text{
     font-family: var(--open-sans-font);
@@ -145,8 +139,6 @@ h3 {
         left: 0.25rem;
     }
 }
-@media screen and (min-width: 992px) {
-}
 @media screen and (min-width: 1200px) {
     h1{
         font-size: 4rem;
@@ -204,13 +196,11 @@ h3 {
 .nav-menu {
     width: 100%;
     display: flex;
-    /* align-items: center; */
 }
 .nav-list {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .nav-item {
@@ -231,7 +221,6 @@ h3 {
     color: var(--titles-footer-background);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 .nav-footer .contact-info{
     margin: 2rem 0;
@@ -695,6 +684,9 @@ h3 {
     .newsletter-content .button{
         margin: 1.5rem 0;
     }
+    .newsletter-content .button span{
+        font-size: 1rem;
+    }
 }
 @media screen and (min-width: 992px) {
     .newsletter-container{
@@ -744,7 +736,7 @@ h3 {
 .footer-logo {
     width: 3.5rem;
 }
-/* Newsletter media queries */
+/* Footer media queries */
 @media screen and (min-width: 768px) {
     .footer-container .contact-info{
         margin: 3rem 0;
