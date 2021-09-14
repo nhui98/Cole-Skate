@@ -147,6 +147,9 @@ h3 {
         left: 0.25rem;
     }
 }
+@media screen and (min-width: 992px) {
+}
+
 
 /* ---------- Menu styles ---------- */
 .nav {
@@ -193,13 +196,13 @@ h3 {
 .nav-menu {
     width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .nav-list {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 .nav-item {
@@ -220,7 +223,7 @@ h3 {
     color: var(--titles-footer-background);
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 .nav-footer .contact-info{
     margin: 2rem 0;
@@ -250,6 +253,33 @@ h3 {
     }
     .nav-footer .contact-info{
         margin: 4rem 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    .nav {
+        width: 35rem;
+        top: 0;
+        right: 0;
+    }
+    .nav-list {
+        align-items: flex-start;
+    }
+    .nav-logo {
+        width: 6rem;
+    }
+    .nav-close span {
+        font-size: 3.5rem;
+    }
+    .nav-link {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+    .nav-footer {
+        justify-content: flex-start;
+        margin-left: 1rem;
+    }
+    .contact-item {
+        margin-right: 1.5rem;
     }
 }
 
@@ -320,6 +350,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15rem;
 }
 .cole-skateboard {
     width: 6rem;
@@ -362,6 +393,11 @@ h3 {
         margin: 3.5rem 0;
     }
 }
+@media screen and (min-width: 992px) {
+    .hero-subtitle{
+        width: 60%;
+    }
+}
 
 /* ------ Product section styles ------ */
 .product {
@@ -400,14 +436,14 @@ h3 {
     margin: 3rem 2rem 0;
 }
 .product-img {
-    max-width: 25rem;
+    max-width: 23rem;
 }
 .product-img img{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px, 
     rgba(0, 0, 0, 0.1) 0px 10px 10px;
 }
 .product-description {
-    max-width: 25rem;
+    max-width: 23rem;
     text-align: center;
     margin-top: 1.25rem;
 }
@@ -425,6 +461,9 @@ h3 {
     .product-container {
         margin-top: 5rem;
         margin-bottom: 15rem;
+    }
+    .product-description {
+        height: 10rem;
     }
 }
 
@@ -494,7 +533,7 @@ h3 {
 .follow-us-img::before{
     border-left: 3rem solid var(--main-background);
     bottom: -2.98rem;
-    right: -0.9rem;
+    right: -0.98rem;
 }
 /* More About media queries */
 @media screen and (min-width: 768px) {
@@ -595,15 +634,37 @@ h3 {
     }
     .newsletter-content{
         margin: 3rem 0;
-    }
-    .newsletter-title{
-        color: var(--highlight-text);
+        justify-content: center;
     }
     .newsletter-button .button{
         display: inline-block;
     }
     .newsletter-content .button{
         margin: 1.5rem 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    .newsletter-container{
+        gap: 5rem;
+    }
+    .newsletter-logo-container{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .newsletter-logo{
+        display: flex;
+        width: 24rem;
+        transform: translate(0, -8rem);
+    }
+    .newsletter-content{
+        width: 50%;
+        margin: 3.5rem 0;
+        gap: 1rem;
+    }
+    .newsletter-subheading{
+        width: 90%;
     }
 }
 
@@ -637,6 +698,25 @@ h3 {
     }
     .footer-logo {
         width: 6.5rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-container .contact-info{
+        margin: 3rem 0;
+    }
+    .footer-logo {
+        width: 5rem;
+        margin: 0 1.5rem;
+    }
+    .contact-info .text-link {
+        font-size: 1.2rem;
+    }
+    .contact-info .divider {
+        font-size: 1.4rem;
     }
 }
 
