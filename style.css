@@ -650,7 +650,7 @@ h3 {
     gap: 2rem;
 }
 .newsletter-logo{
-    width: 10rem;
+    width: 8rem;
     transform: translateY(-3rem);
 }
 .newsletter-content{
@@ -671,6 +671,10 @@ h3 {
 }
 .newsletter-content .button span{
     color: var(--titles-footer-background);
+    font-size: .8rem;
+}
+.newsletter-button .button{
+    display: inline-block;
 }
 /* Newsletter media queries */
 @media screen and (min-width: 768px) {
